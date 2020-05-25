@@ -1,2 +1,5 @@
 
 play_music_code/client_secrets.json
+*.ipynb
+*.ipynb
+play_music_code/client_secret.json
