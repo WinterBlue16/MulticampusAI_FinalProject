@@ -10,7 +10,8 @@
 <br>
 - 서비스 구현 예시
   - 얼굴 감정 인식
+ <br>
 ![ezgif com-resize](https://user-images.githubusercontent.com/58945760/85095083-63726280-b22b-11ea-9521-2627c2a4243f.gif)
-
-  - 음악 추천
+<br>
+  - 음악 추천<br>
 ![ezgif com-resize (1)](https://user-images.githubusercontent.com/58945760/85095111-72591500-b22b-11ea-8b10-c4a40e9b627e.gif)
