@@ -1,2 +1,3 @@
 commit test
 commit test after clone
+commit test after name changed
