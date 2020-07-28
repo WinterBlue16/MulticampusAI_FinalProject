@@ -6,13 +6,17 @@
 
 
 
+ 이하의 과정은 django을 통한 웹 서비스 개발과 병행하여 진행되었으며, 모델링을 한 후에는 실제 웹페이지에서 test를 진행하였다.  
+
+
+
 ## 1. 전이학습(Transfer learning)
 
 ![1_1CxVzTNILTHgDs5yJO4W9A](https://user-images.githubusercontent.com/58945760/88550116-1ec4bd00-d05c-11ea-964f-6e868ef8f008.png)
 
 
 
-Deep Neural Network와 Convolution Neural Network를 기반으로 한 모델링은 크게 두 가지로 나뉜다. 
+**Deep Neural Network**와 **Convolution Neural Network**를 기반으로 한 모델링은 크게 두 가지로 나뉜다. 
 
 첫 번째는 Layer를 한 층 한 층 쌓아올려 자체적인 모델을 만드는 것이다. 보통 처음 모델링을 하고 개념을 이해할 때는 이 방법을 사용한다. 그러나 코드를 계속 돌려보며 하이퍼 파라미터를 조정하여야 하기에 최적을 모델을 찾는 데 시간이 오래 걸린다는 단점이 있다. 훈련할 데이터 양과 분류할 항목이 많아질 시 이 단점은 더욱 심화된다.  
 
@@ -24,21 +28,25 @@ Deep Neural Network와 Convolution Neural Network를 기반으로 한 모델링�
 
 > 공식 [keras API 문서](https://keras.io/api/applications/)에 존재하는 전이학습 모델들만 27개가 존재한다. 우리는 먼저 모델들의 성능을 비교할 수 있는 간단한 dataset을 만들어 시험해보기로 하였다. 
 
+우선은 다른 Positive, Negative에 해당하는 데이터를 각각 2,000장씩 모아 dataset을 구성하였다. 그리고 keras API에 들어 있는 모델을 모두 사용하여 데이터의 감정을 분류하는 실험을 진행했다. 결과적으로 0.76~1.00에 해당하는 정확도를 낼 수 있었다. 
+
+우리는 그 중에서 가장 높은 정확도를 보인 모델은 `DenseNet`, `MoblieNet`, `Xception`이었다. 이 모델들을 대상으로 결과를 비교하여 분류 모델로 활용하기로 하였다. 
 
 
-### 1.2 모델 시험하기
 
-우선은 다른 Positive, Negative에 해당하는 데이터를 각각 2,000장씩 모아 dataset을 구성하였다. 그리고 
+### 1.2  모델 시험하기
+
+
+
+### 1.3 모델 개선하기
+
+
+
+### 1.4 다른 모델과의 비교
 
 
 
 ## 2. 최종 CNN 모델
-
-
-
-
-
-전이학습 모델 사용
 
 데이터의 한계를 느낌(전처리 링크 첨부)
 
