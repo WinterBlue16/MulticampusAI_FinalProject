@@ -38,11 +38,11 @@
 
 |   Model   | Accuracy | Loss |
 | :-------: | :------: | :--: |
-| GoogLeNet |          |      |
-|  ResNet   |          |      |
-| MobileNet |          |      |
 | DenseNet  |          |      |
+| Xception  |          |      |
+| MobileNet |          |      |
 |   VGG16   |          |      |
+|    ...    |          |      |
 
 
 
@@ -52,11 +52,13 @@
 
 다행히 `MobileNet`의 경우, `h5`파일의 용량이 다른 모델의 절반임에도 정확도에 있어 다른 후보 모델과 큰 차이를 보이지 않았기에 `loading` 시간을 절반 이상으로 줄일 수 있었다. 
 
+default graph 내용 추가
+
 
 
 #### 1.3.1 데이터 추가 전처리
 
-데이터 전처리 항목 포함할 것
+![데이터 추가](https://user-images.githubusercontent.com/58945760/89427140-e026b500-d775-11ea-9a15-8f4246caa091.PNG)
 
 
 
