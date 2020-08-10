@@ -8,31 +8,52 @@
 
 ![KakaoTalk_20200619_124911264](https://user-images.githubusercontent.com/58945760/85095315-f7dcc500-b22b-11ea-9b78-946b8fc8dd29.png)
 
+backend는 `django`를 통해 웹 서비스를 구현하였고,  코딩에 사용한 주요 `tool`은 `Atom`입니다. 
+
+
+
 ## 1. 기본 화면 구성
 
-화면계획서 참고링크 
+- [화면계획서]()
+- 웹 시나리오 
+
+![웹 흐름도](https://user-images.githubusercontent.com/58945760/89790495-f7dab080-db5c-11ea-85c4-dd8bb362853c.PNG)
+
+
 
 ## 2. 웹캠 접근 및 구현
 
 > 노트북의 웹캠에 접근하여 사용자의 얼굴을 받아들이도록 한다. 
 
+
+
 ## 3. 이미지 전송
 
 > 웹캠으로 받아들인 이미지를 다음 페이지로 저장, 전송한다. 
+
+
 
 ## 4. 감정분류 모델 적용
 
 > 미리 만들어둔 모델을 프로젝트 내에서 적용하여 결과를 출력한다. 
 
+
+
 ## 5. Youtube playlist 재생
 
 > 모델의 감정 분류 결과에 따라 playlist를 재생되도록 한다.
+
+
 
 ## 6-1. 음악 추천 기능 구현
 
 > 미리 만들어둔 음악 추천 알고리즘을 적용한다. 
 
+
+
 ### 음악 추천 알고리즘 
+
+- [추천 알고리즘 참고 링크](https://github.com/MLFYM/RECODUO/blob/master/technical_blog/04_%EC%B6%94%EC%B2%9C%EC%8B%9C%EC%8A%A4%ED%85%9C/Recommender_System_For_Music.md#recommender-system-for-music)
 
 ### 추천 음악 링크 추출
 
