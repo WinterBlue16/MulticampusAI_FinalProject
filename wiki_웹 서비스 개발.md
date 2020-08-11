@@ -41,7 +41,7 @@ backend는 `django`를 통해 웹 서비스를 구현하였고,  코딩에 사�
 
 ## 5. Youtube playlist 재생
 
-> 모델의 감정 분류 결과에 따라 playlist를 재생되도록 한다.
+> 모델의 감정 분류 결과에 따라 playlist가 재생되도록 한다.
 
 
 
@@ -49,13 +49,17 @@ backend는 `django`를 통해 웹 서비스를 구현하였고,  코딩에 사�
 
 > 미리 만들어둔 음악 추천 알고리즘을 적용한다. 
 
-
+![img](file:///C:\Users\User\AppData\Local\Temp\msohtmlclip1\01\clip_image002.jpg)
 
 ### 음악 추천 알고리즘 
 
-- [추천 알고리즘 참고 링크](https://github.com/MLFYM/RECODUO/blob/master/technical_blog/04_%EC%B6%94%EC%B2%9C%EC%8B%9C%EC%8A%A4%ED%85%9C/Recommender_System_For_Music.md#recommender-system-for-music)
+> 해당 서비스에 적용된 추천 알고리즘은 협업 필터링과 콘텐츠 기반 필터링이 혼합된 형태이며, 자세한 설명은 [링크](https://github.com/MLFYM/RECODUO/blob/master/technical_blog/04_%EC%B6%94%EC%B2%9C%EC%8B%9C%EC%8A%A4%ED%85%9C/Recommender_System_For_Music.md#recommender-system-for-music)에 자세히 설명되어 있다. 추천 시스템에 대한 기본적인 내용은 [이 링크](https://github.com/MLFYM/RECODUO/blob/master/technical_blog/04_%EC%B6%94%EC%B2%9C%EC%8B%9C%EC%8A%A4%ED%85%9C/RecommendationSystem.md#recommender-system)를 참조한다. 
+
+
 
 ### 추천 음악 링크 추출
+
+> 웹페이지에서 재생되는 Youtube 영상 링크는 Google 웹 크롤링을 통해 추출한다.  
 
 
 
