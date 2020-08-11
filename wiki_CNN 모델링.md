@@ -42,7 +42,7 @@
 | Xception  |          |      |
 | MobileNet |          |      |
 |   VGG16   |          |      |
-|    ...    |          |      |
+|    ...    |   ...    | ...  |
 
 
 
@@ -64,15 +64,23 @@ default graph 내용 추가
 
 ### 1.4 다른 모델과의 비교 및 결론
 
+데이터  추가 전후 비교
+
 
 
 ## 2. 최종 CNN 모델
 
+> 위의 실험을 거쳐 모델을 최종 선정하였다. 
 
+- f1 score 
 
+![great score](https://user-images.githubusercontent.com/58945760/89898306-6ed67e80-dc1b-11ea-92d0-d5e5d3cf2aae.PNG)
 
+- Accuracy, loss 변화 그래프
 
-데이터의 한계를 느낌(전처리 링크 첨부)
+![데이터 2차 추가 후 graph](https://user-images.githubusercontent.com/58945760/89898248-56666400-dc1b-11ea-86e2-641e30628d75.PNG)
+
+데이터의 한계를 느낌
 
 최종 모델과 정확도, LOSS
 
