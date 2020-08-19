@@ -55,7 +55,9 @@ backend는 `django`를 통해 웹 서비스를 구현하였고,  코딩에 사�
 
 > 해당 서비스에 적용된 추천 알고리즘은 협업 필터링과 콘텐츠 기반 필터링이 혼합된 형태이며, 자세한 설명은 [링크](https://github.com/MLFYM/RECODUO/blob/master/technical_blog/04_%EC%B6%94%EC%B2%9C%EC%8B%9C%EC%8A%A4%ED%85%9C/Recommender_System_For_Music.md#recommender-system-for-music)에 자세히 설명되어 있다. 추천 시스템에 대한 기본적인 내용은 [이 링크](https://github.com/MLFYM/RECODUO/blob/master/technical_blog/04_%EC%B6%94%EC%B2%9C%EC%8B%9C%EC%8A%A4%ED%85%9C/RecommendationSystem.md#recommender-system)를 참조한다. 
 
+음악 알고리즘의 메커니즘은 이하의 스크린샷과 같다. 
 
+`input`으로 들어가는 값은 재생 중인 음악이 melon dataset에서 가지는 고유 코드와 그 곡에 붙은 태그이다. 알고리즘을 거치면 `output`으로써 추천곡의 제목과 아티스트명이 `string`으로 반환된다.  이 값들은 아래의 Google 크롤링 코드의 `input` 값이 된다. 
 
 ### 6.1.2 추천 음악 링크 추출
 
@@ -76,4 +78,6 @@ backend는 `django`를 통해 웹 서비스를 구현하였고,  코딩에 사�
 ## 7. 음악 재추천 loop 구현
 
 > 추천받은 음악이 마음에 들어 또 다른 음악을 추천받고 싶을 때, 계속적으로 추천을 받을 수 있도록 한다. 
+
+기본적으로 위의 음악 추천 알고리즘과 동일하나, 알고리즘을 적용하기 전 `input`으로 들어갈 태그를 선택하는 과정이 들어간다. 
 
