@@ -8,7 +8,7 @@
 
 ## 📽 프로젝트 소개
 
-> MLFYM 의 데이터 수집 부터 전처리, 모델링, 웹 구현에 대한 전반적인 소개 입니다. 
+> MLFYM 의 데이터 수집 부터 전처리, 모델링, 웹 구현에 대한 전반적인 소개 입니다. 프로젝트 진행 과정을 정리한 문서들은 :book:[프로젝트 wiki](https://github.com/MLFYM/RECODUO/wiki)에서 확인할 수 있습니다. 
 
 ### (1) 프로젝트의 전체 구조
 
@@ -118,7 +118,7 @@
 
 ## 📝 Document
 
-- [프로젝트 기간 동안의 회의록]([https://github.com/WinterBlue16/MultcampusAI_FinalProject/tree/master/Meeting%20log](https://github.com/WinterBlue16/MultcampusAI_FinalProject/tree/master/Meeting log))
+- [프로젝트 기간 동안의 회의록](https://github.com/WinterBlue16/MultcampusAI_FinalProject/tree/master/Meeting%20log)
 - [프로젝트에 대한 전반적인 설명](https://github.com/dannylee93/Emotion-Recognition/blob/master/README.md)
 - [기술공유 01. CNN의 아키텍처 스터디 자료](https://github.com/dannylee93/Emotion-Recognition/tree/master/Model)
 - [기술공유 02. 음악추천 시스템](https://github.com/dannylee93/Emotion-Recognition/tree/master/Recommender-System)
