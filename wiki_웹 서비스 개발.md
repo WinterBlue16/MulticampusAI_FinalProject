@@ -63,19 +63,34 @@ backend는 `django`를 통해 웹 서비스를 구현하였고,  코딩에 사�
 
 > 해당 서비스에 적용된 추천 알고리즘은 협업 필터링과 콘텐츠 기반 필터링이 혼합된 형태이며, 자세한 설명은 [링크](https://github.com/MLFYM/RECODUO/blob/master/technical_blog/04_%EC%B6%94%EC%B2%9C%EC%8B%9C%EC%8A%A4%ED%85%9C/Recommender_System_For_Music.md#recommender-system-for-music)에 자세히 설명되어 있다. 추천 시스템에 대한 기본적인 내용은 [이 링크](https://github.com/MLFYM/RECODUO/blob/master/technical_blog/04_%EC%B6%94%EC%B2%9C%EC%8B%9C%EC%8A%A4%ED%85%9C/RecommendationSystem.md#recommender-system)를 참조한다. 
 
-음악 알고리즘의 메커니즘은 이하의 스크린샷과 같다. 
+위의 링크에 나와있는 음악 추천 메커니즘에는 추가해야 할 부분들이 있었다. 그 내용은 이하와 같다.
+
+ 
+
+1. 데이터에 없는 곡이 추천되어서는 안 된다. 
+2. 추천곡의 중복을 최대한 막아야 한다. 
+
+
+
+음악 알고리즘의 진행 과정은 이하의 스크린샷으로 확인할 수 있다. 
 
 ![추천 알고리즘 메커니즘](https://user-images.githubusercontent.com/58945760/91578906-cb5ccc00-e985-11ea-82b3-b714cae5000e.PNG)
 
-`input`으로 들어가는 값은 재생 중인 음악이 melon dataset에서 가지는 고유 코드와 그 곡에 붙은 태그이다. melon dataset에서 태그는 playlist를 기준으로 매겨져 있기에 default playlist에는 곡이 포함된 playlist의 태그를 고려하여 곡별 태그를 선정하였다. 알고리즘을 거치면 `output`으로써 추천곡의 제목과 아티스트명이 `string`으로 반환된다.  이 값들은 아래의 Google 크롤링 코드의 `input` 값이 된다. 
+`input`으로 들어가는 값은 재생 중인 음악이 melon dataset에서 가지는 고유 코드와 그 곡에 붙은 태그이다. melon dataset에서 태그는 playlist를 기준으로 매겨져 있기에 default playlist에는 곡이 포함된 playlist의 태그를 고려하여 곡별 태그를 선정하였다. 알고리즘을 거치면 `output`으로써 추천곡의 제목과 아티스트명이 `string`으로 반환된다.  이 값들은 아래의 Google 크롤링 코드의 `input` 값이 된다.  
+
+
 
 ### 6.1.2 추천 음악 링크 추출
 
 > 웹페이지에서 재생되는 Youtube 영상 링크는 Google 웹 크롤링을 통해 추출한다.  
 
-크롤링할 사이트로 Google을 선택한 이유는 노래 제목+아티스트명으로 검색하였을 때 공식 영상에 가까운 동영상을 최상단에 보여주기에, 보다 높은 품질의 영상을 사용자에게 제공할 수 있기 때문이다.  
+크롤링할 사이트로 Google을 선택한 이유는 노래 제목+아티스트명으로 검색하였을 때 공식 영상에 가까운 동영상을 최상단에 보여주기에, 보다 높은 품질의 영상을 사용자에게 제공할 수 있기 때문이다.  크롤링 코드를 짤 때 주의했던 점은 다음과 같다. 
 
-한 곡을 크롤링하는 데 생기는 문제점과 그 해결 방법
+1. 
+
+
+
+
 
 
 
